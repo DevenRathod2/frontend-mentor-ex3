@@ -1,0 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+:root {
+  /*Primary Colors */
+  --dark_blue: hsl(217, 28%, 15%); /* intro and email signup background*/
+  --dark_blue_main: hsl(218, 28%, 13%); /*(main background)*/
+  --dark_footer: hsl(216, 53%, 9%); /*(footer background):*/
+  --dark_blue_testimonials: hsl(219, 30%, 18%);
+  /*Accent Colors */
+  --cyan: hsl(176, 68%, 64%); /*(inside call-to-action gradient)*/
+  --blue: hsl(198, 60%, 50%); /*(inside call-to-action gradient)*/
+  --light_red: hsl(0, 100%, 63%); /*(error)*/
+  /*Neutral */
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--dark_blue);
+  color: var(--white);
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  
+  
+  font-family: 'Raleway', sans-serif; 
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.logo {
+  height: 45px;
+  width: auto;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.navbar nav {
+  display: inline;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  list-style: none;
+  align-items: center;
+}
+
+ul li {
+  margin: 20px;
+}
+
+ul li a {
+  color: var(--white);
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+
+.title_image {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.4rem;
+  width: auto;
+  height: 450px;
+}
+
+.text_section {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text_section h1 {
+  text-align: center;
+}
+
+.text_section p {
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.3rem;
+}
+
+.btn button {
+  height: 2.8rem;
+  width: 200px;
+  background-color: var(--cyan);
+  color: white;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.feature_section {
+  margin: 0 auto;
+  max-width: 70%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 8rem;
+  margin-top: 8rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.feature {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.features {
+  width: 420px;
+  height: 200px;
+  margin-bottom: -50px;
+}
+
+.features img {
+  height: 70px;
+  width: auto;
+  align-items: center;
+}
+
+.feature p {
+  margin-top: -8px;
+}
+
+.worksection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 13rem;
+}
+
+.work_text_section h1 {
+  text-align: start;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.work_text_section p {
+  text-align: start;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  margin-bottom: px;
+}
+
+.work_link {
+  margin-top: 60px;
+  text-align: start;
+  font-family: "Raleway", sans-serif;
+}
+
+.work_link a {
+  color: var(--cyan);
+}
+
+.icon {
+  align-items: center;
+}
+
+/* Testimonials Section */
+
+.testimonials_section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 80px;
+  padding-bottom: 10rem;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  height: 220px;
+  width: 380px;
+  border-radius: 5px;
+  padding: 0px;
+  background-color: var(--dark_blue_testimonials);
+  margin-bottom: 20px;
+}
+
+.testimonials p {
+  margin: 40px;
+}
+
+.testimonials_profile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.testimonials_profile img {
+  height: 40px;
+  border-radius: 20px;
+}
+
+.profile {
+  margin-top: -20px;
+  margin-left: 40px;
+}
+
+.profile_name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: -40px;
+}
+
+.profile_name p {
+  margin-top: -20px;
+  margin-left: -0.1px;
+}
+
+.bg_quote {
+  height: 40px;
+}
+
+/* Footer Section */
+
+footer {
+  position: relative;
+  margin-top: 10rem;
+  padding-top: 14rem;
+  height: 15rem;
+  background: var(--dark_footer);
+}
+
+footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer_logo {
+  display: flex;
+  justify-content: start;
+  margin-top: -120px;
+  margin-bottom: 25px;
+}
+
+.footer_info {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin: 20px;
+}
+
+.footer_info_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer_call {
+  margin-top: -170px;
+  margin-bottom: 95px;
+}
+
+.info {
+  margin-top: -150px;
+}
+
+.about_us {
+  display: flex;
+  flex-direction: row;
+}
+
+.about_us ul {
+  display: inline;
+}
+
+.about_us ul li {
+  margin-bottom: 5px;
+}
+
+.contact_us ul li {
+  margin-bottom: 5px;
+}
+
+.contact_us ul {
+  display: inline;
+}
+
+.footer_float_card {
+  display: flex;
+  flex-direction: column;
+  background: var(--dark_blue_testimonials);
+  position: absolute;
+  max-width: 70%;
+  top: -45%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.418);
+}
+
+.footer_float_card input {
+  color: black;
+  border: none;
+  outline: none;
+  min-width: 20%;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 25px;
+}
+
+.card_btn {
+    background: linear-gradient( to right ,var(--cyan) ,var(--blue));
+    color: white;
+    border: none;
+    width: 240px;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.credit {
+    background: var(--dark_blue_testimonials);
+    width: 100%;
+}
+
+.footer_credit {
+    font-size: 14px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    body {
+        overflow-x: hidden;
+    }
+    .logo {
+        width: auto;
+        height: 30px;
+    }
+
+    .title_image{
+        height: 250px;
+        width: auto;
+    }
+
+    nav ul li {
+        font-size: 10px;
+    }
+
+    .text_section {
+        font-size: 14px;
+    }
+
+    .feature_section {
+        font-size: 14px;
+        margin-left: -38px; 
+    }
+
+    .feature p {
+        padding: 20px;
+    }
+    
+    .worksection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work_image img {
+        width: auto;
+        height: 250px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .work_text_section h1 {
+        font-size: 25px;
+    }
+
+    .work_link {
+        margin-top: 2px;
+    }
+
+    .bg_quote {
+        position: relative;
+        margin-right: 300px;
+        margin-bottom: -20px;
+    }
+
+    .testimonials {
+        height: 250px;
+    }
+
+    .footer_float_card {
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+        
+    }
+
+    .card_btn {
+        width: 290px;
+        cursor: pointer;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        /* padding-top: 20rem; */
+        padding-bottom: 25rem;
+    }
+
+    .footer_logo {
+        margin-top: -70px;
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .info {
+        margin-top: 0px;
+    }
+
+    .footer_info_2 {
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+
+    .footer_call {
+        margin-top: -20px;
+    }
+
+    .about_us {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: -90px;
+        margin-left: -40px;
+    }
+
+    .contact_us {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: -40px;
+    }
+
+    .credit {
+        background: var(--dark_blue_testimonials);
+        width: 100%;
+    }
+    
+    .footer_credit {
+        font-size: 11px;
+    }
+}
+
+
+
+/* FONTS CHANGE */
+/* Social Media  */
+/* FONTAWESOME ICONS */
+/* LINKS */
