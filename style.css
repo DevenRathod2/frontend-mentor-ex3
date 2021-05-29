@@ -19,9 +19,8 @@ body {
   color: var(--white);
   font-family: "Open Sans", sans-serif;
   margin: 0;
-  
-  
-  font-family: 'Raleway', sans-serif; 
+
+  font-family: "Raleway", sans-serif;
 }
 
 .container {
@@ -121,33 +120,22 @@ ul li a {
 .feature {
   max-width: 100%;
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.features {
-  width: 420px;
-  height: 200px;
-  margin-bottom: -50px;
-}
-
-.features img {
-  height: 70px;
-  width: auto;
-  align-items: center;
-}
-
 .feature p {
-  margin-top: -8px;
+  margin-top: -20px;
 }
 
 .worksection {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin-top: 13rem;
+  margin-top: 5rem;
 }
 
 .work_text_section h1 {
@@ -329,179 +317,203 @@ footer div {
 }
 
 .card_btn {
-    background: linear-gradient( to right ,var(--cyan) ,var(--blue));
-    color: white;
-    border: none;
-    width: 240px;
-    height: 50px;
-    border-radius: 30px;
-    margin-top: 15px;
-    cursor: pointer;
+  background: linear-gradient(to right, var(--cyan), var(--blue));
+  color: white;
+  border: none;
+  width: 240px;
+  height: 50px;
+  border-radius: 30px;
+  margin-top: 15px;
+  cursor: pointer;
 }
 
 .credit {
-    background: var(--dark_blue_testimonials);
-    width: 100%;
+  background: var(--dark_blue_testimonials);
+  width: 100%;
 }
 
 .footer_credit {
-    font-size: 14px;
+  font-size: 14px;
 }
 
+.info img {
+  height: 20px;
+  margin-top: 15px;
+}
 
+.social_icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.social_icons i {
+  font-size: 30px;
+  margin: 15px;
+  margin-top: 40px;
+}
 @media only screen and (max-width: 600px) {
+  body {
+    overflow-x: auto;
     
-    body {
-        overflow-x: hidden;
-    }
-    .logo {
-        width: auto;
-        height: 30px;
-    }
+  }
+  .logo {
+    width: auto;
+    height: 30px;
+  }
 
-    .title_image{
-        height: 220px;
-        width: auto;
-    }
+  .title_image {
+    height: 220px;
+    width: auto;
+  }
 
-    nav ul li {
-        font-size: 10px;
-        margin-left: -10px;
-    }
+  nav ul li {
+    font-size: 10px;
+    margin-left: -10px;
+  }
 
-    .text_section {
-        font-size: 14px;
-    }
+  .text_section {
+    font-size: 14px;
+  }
 
-    .text_section h1 {
-      font-size: 1.5rem;
+  .text_section h1 {
+    font-size: 1.5rem;
   }
 
   .text_section p {
-    font-size: .8rem;
-}
-    .feature_section {
-        font-size: 14px;
-        /* height: auto;
-        width: auto;
-        margin: 0 auto; */
-      }
+    font-size: 0.8rem;
+  }
+  .feature_section {
+    margin: 0 auto;
+    margin-top: 70px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-end;
+    gap: 2rem;
+  }
 
-      .feature {
-        margin-left: -100px;
-      }
+  .feature {
+    margin-left: -100px;
+  }
 
-    .feature p {
-        padding: 20px;
-        padding-left: 70px;
-        padding-right: 70px;
-    }
+  .feature p {
+    padding: 10px;
+  }
+
+  .worksection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .work_image img {
+    width: auto;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .work_text_section h1 {
+    font-size: 20px;
+  }
+
+  .work_text_section p {
+    font-size: 12px;
+    
+  }
+  .work_link {
+    margin-top: 2px;
+  }
+
+  .bg_quote {
+    visibility: hidden;
+  }
+
+  .testimonials {
+    height: 250px;
+  }
+
+  .footer_float_card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+  }
+
+  .card_btn {
+    width: 290px;
+    cursor: pointer;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 20rem; */
+    padding-bottom: 28rem;
+    
+  }
+
+  .footer_logo {
+    margin-top: -70px;
+  }
+
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .info {
+    margin-top: 0px;
+  }
+
+  .footer_info_2 {
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+
+  .footer_call {
+    margin-top: -20px;
+  }
+
+  .about_us {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -90px;
+    margin-left: -40px;
+  }
+
+  .contact_us {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: -40px;
+  }
+
+  .social_icons {
+    display: flex;
+    flex-direction: row;
+  }
   
-    
-    .worksection {
-        display: flex;
-        flex-direction: column;
-    }
+  .social_icons i {
+    font-size: 20px;
+    margin: 15px;
+    margin-top: 40px;
+  }
 
-    .work_image img {
-        width: auto;
-        height: 250px;
-        display: flex;
-        flex-direction: row;
-    }
+  .credit {
+    background: var(--dark_blue_testimonials);
+    width: 100%;
+  }
 
-    .work_text_section h1 {
-        font-size: 25px;
-    }
-
-    .work_link {
-        margin-top: 2px;
-    }
-
-    .bg_quote {
-        position: relative;
-        margin-right: 300px;
-        margin-bottom: -20px;
-    }
-
-    .testimonials {
-        height: 250px;
-    }
-
-    .footer_float_card {
-        display: flex;
-        flex-direction: column;
-        margin-top: 80px;
-        
-    }
-
-    .card_btn {
-        width: 290px;
-        cursor: pointer;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        /* padding-top: 20rem; */
-        padding-bottom: 25rem;
-    }
-
-    .footer_logo {
-        margin-top: -70px;
-    }
-
-    footer .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-    }
-
-    .info {
-        margin-top: 0px;
-    }
-
-    .footer_info_2 {
-        align-items: flex-start;
-        margin-left: 20px;
-    }
-
-    .footer_call {
-        margin-top: -20px;
-    }
-
-    .about_us {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: flex-start;
-        margin-top: -90px;
-        margin-left: -40px;
-    }
-
-    .contact_us {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: flex-start;
-        margin-left: -40px;
-    }
-
-    .credit {
-        background: var(--dark_blue_testimonials);
-        width: 100%;
-    }
-    
-    .footer_credit {
-        font-size: 11px;
-    }
-
-   
+  .footer_credit {
+    font-size: 11px;
+  }
 }
-
-
 
 /* FONTS CHANGE */
 /* Social Media  */
