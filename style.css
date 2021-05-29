@@ -367,7 +367,7 @@ footer div {
   }
 
   nav ul li {
-    font-size: 10px;
+    font-size: 14px;
     margin-left: -10px;
   }
 
@@ -436,7 +436,8 @@ footer div {
   .footer_float_card {
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
+    margin-top: 170px;
+    max-width: 68%;
   }
 
   .card_btn {
@@ -448,7 +449,7 @@ footer div {
     display: flex;
     flex-direction: column;
     /* padding-top: 20rem; */
-    padding-bottom: 28rem;
+    padding-bottom: 35rem;
     
   }
 
@@ -466,11 +467,37 @@ footer div {
     margin-top: 0px;
   }
 
-  .footer_info_2 {
-    align-items: flex-start;
-    margin-left: 20px;
+  .info img {
+    padding-right: 20px;
+    margin-bottom: 10px;
   }
 
+  .footer_info_2 p img {
+    padding-right: 20px;
+    margin-bottom: 10px;
+  }
+
+
+  .email_call {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-left: 20px;
+    margin-bottom: 0px;
+
+  }
+
+  .footer_list_2 ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-left: -60px;
+  }
+
+  .footer_list_2 ul li img {
+    margin-right: 20px;
+  }
   .footer_call {
     margin-top: -20px;
   }
@@ -483,6 +510,7 @@ footer div {
     align-items: flex-start;
     margin-top: -90px;
     margin-left: -40px;
+    margin-top: 0px;
   }
 
   .contact_us {
@@ -500,7 +528,7 @@ footer div {
   }
   
   .social_icons i {
-    font-size: 20px;
+    font-size: 30px;
     margin: 15px;
     margin-top: 40px;
   }
