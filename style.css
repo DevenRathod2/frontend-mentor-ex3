@@ -360,26 +360,43 @@ footer div {
     }
 
     .title_image{
-        height: 250px;
+        height: 220px;
         width: auto;
     }
 
     nav ul li {
         font-size: 10px;
+        margin-left: -10px;
     }
 
     .text_section {
         font-size: 14px;
     }
 
+    .text_section h1 {
+      font-size: 1.5rem;
+  }
+
+  .text_section p {
+    font-size: .8rem;
+}
     .feature_section {
         font-size: 14px;
-        margin-left: -38px; 
-    }
+        /* height: auto;
+        width: auto;
+        margin: 0 auto; */
+      }
+
+      .feature {
+        margin-left: -100px;
+      }
 
     .feature p {
         padding: 20px;
+        padding-left: 70px;
+        padding-right: 70px;
     }
+  
     
     .worksection {
         display: flex;
@@ -480,6 +497,8 @@ footer div {
     .footer_credit {
         font-size: 11px;
     }
+
+   
 }
 
 
