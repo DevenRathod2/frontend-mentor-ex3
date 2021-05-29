@@ -351,6 +351,18 @@ footer div {
   margin: 15px;
   margin-top: 40px;
 }
+
+.footer_credit a {
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+.footer_list_2 ul {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mobile Responsive */
 @media only screen and (max-width: 600px) {
   body {
     overflow-x: auto;
